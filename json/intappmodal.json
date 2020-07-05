@@ -1,0 +1,180 @@
+{
+	"type": "modal",
+	"callback_id": "submitIntapp",
+	"title": {
+		"type": "plain_text",
+		"text": "Log Time",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Copy from Template",
+						"emoji": true
+					},
+					"value": "click_me_123"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Copy from Recent",
+						"emoji": true
+					},
+					"value": "click_me_123"
+				}
+			]
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "datepicker",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select a date",
+					"emoji": true
+				},
+				"action_id": "workdate"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Work Date",
+				"emoji": true
+			},
+			"block_id": "workdate"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select an item",
+					"emoji": true
+				},
+				"action_id": "client",
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "023949 [Cartersville Insurance Co] - Billable",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "3940203 [Omaha Financial Ltd ] - Billable",
+							"emoji": true
+						},
+						"value": "value-1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "034920 [Countrytown Mortgage Lenders] - Billable",
+							"emoji": true
+						},
+						"value": "value-2"
+					}
+				]
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Client",
+				"emoji": true
+			},
+			"block_id": "client"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select an item",
+					"emoji": true
+				},
+				"action_id": "engagement",
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "012668 [Phillips Travelers, CPA] - Billable",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "039349 [Dorothy Meyers, CPA] - Billable",
+							"emoji": true
+						},
+						"value": "value-1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "043940 [Crandall Rillinsworth, CPA] - Billable",
+							"emoji": true
+						},
+						"value": "value-2"
+					}
+				]
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Engagement",
+				"emoji": true
+			},
+			"block_id": "engagement"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "hours"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Hours",
+				"emoji": true
+			},
+			"block_id": "hours"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"multiline": true,
+				"action_id": "narrative"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Narrative",
+				"emoji": true
+			},
+			"block_id": "narrative"
+		}
+	]
+}
