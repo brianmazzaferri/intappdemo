@@ -1,0 +1,82 @@
+{
+	"type": "modal",
+	"callback_id": "submitTimers",
+	"title": {
+		"type": "plain_text",
+		"text": "Intapp Timers",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Done",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Start New Timer",
+						"emoji": true
+					},
+					"action_id": "startnewtimer",
+					"value": "click_me_123"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Change Client",
+						"emoji": true
+					},
+					"value": "click_me_123"
+				}
+			]
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Selected Client:* PB&J"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Reese Deposition*\n_000470_ PB&J\n_570423_ Reese Jun Dep\n`00:42`"
+			},
+			"accessory": {
+				"type": "image",
+				"image_url": "https://i.imgur.com/a7MqEoE.png",
+				"alt_text": "cute cat"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Discovery Review*\n_000470_ PB&J\n_570976_ Disco 3\n`02:42`"
+			},
+			"accessory": {
+				"type": "image",
+				"image_url": "https://i.imgur.com/TIp4sBD.png",
+				"alt_text": "cute cat"
+			}
+		}
+	]
+}

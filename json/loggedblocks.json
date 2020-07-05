@@ -1,0 +1,9 @@
+[
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Time Logged!*\n_Date:_ !DATE\n_Client:_ !CLIENT\n_Engagement:_ !ENGAGEMENT\n_Hours:_ !HOURS (Total for day: *4.15*)\n_Narrative:_ !NARRATIVE"
+			}
+		}
+	]

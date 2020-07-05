@@ -1,0 +1,100 @@
+{
+	"type": "modal",
+	"callback_id": "startTimer",
+	"title": {
+		"type": "plain_text",
+		"text": "Start New Timer",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Start Timer",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Selected Client:* PB&J (000470)"
+			},
+			"accessory": {
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"text": "Change Client",
+					"emoji": true
+				},
+				"value": "click_me_123"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"block_id": "title",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "title"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Title",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "engagement",
+			"element": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select an item",
+					"emoji": true
+				},
+				"action_id": "engagement",
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "570423 Meeting Opposing Counsel",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "570405 Planning",
+							"emoji": true
+						},
+						"value": "value-1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "570390 File Review",
+							"emoji": true
+						},
+						"value": "value-2"
+					}
+				]
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Engagement",
+				"emoji": true
+			}
+		}
+	]
+}
